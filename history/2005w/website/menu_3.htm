@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<title>無標題文件</title>
+<base target="main">
+<style type="text/css">
+<!--
+body {
+	background-color: #A39089;
+	background-image: url(images/menu_background.gif);
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+a {
+	color: #330066;
+	text-decoration: none;
+}
+a:hover {
+	color: #AA4444;
+}
+a:active {
+	color: #AA4444;
+}
+td {
+	font-family: 細明體;
+	font-size: 12pt;
+}
+-->
+</style>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function defaultPage(pageURL) {
+  parent.main.location.href = pageURL ;
+}
+
+var speed = 10 ;
+var item_width = 85 ;
+var item_number = 5 ;
+var step = 6 ;
+var link_text = new Array(1) ;
+link_text[0] = '規則章程' ;
+link_text[1] = '隊伍統計' ;
+link_text[2] = '賽程表' ;
+link_text[3] = '場地位置' ;
+link_text[4] = '比賽結果' ;
+var link_url = new Array(1) ;
+link_url[0] = 'rule/rule_1.htm' ;
+link_url[1] = 'statistics.htm' ;
+link_url[2] = 'procedure.htm' ;
+link_url[3] = 'map/map.htm' ;
+link_url[4] = 'final.htm' ;
+var current_item ;
+var current_step ;
+var temp_text ;
+
+function show_item() {
+  current_step++ ;
+  if (current_step % step == 0) {
+    current_item++ ;
+	temp_text = '<table height="25" border="0" cellspacing="0" cellpadding="0"><tr>' ;
+	for (var i = 0 ; i < current_item ; i++)
+	  temp_text = temp_text + '<td width="' + item_width + '" align="center"><a href="' + link_url[i] + '">' + link_text[i] + '</a></td>' ;
+    temp_text = temp_text + '</tr></table>' ;
+	item_area.innerHTML = temp_text ;
+  }
+  if (current_step <= step * item_number) {
+    item_area.style.color = '#FFFFFF' ;
+    item_area.style.width = Math.floor(current_step * (item_width / step) + 0.5) + 'px' ;
+    setTimeout("show_item();", speed) ;
+  }
+}
+
+function show() {
+  if (document.all) {
+    current_item = 0 ;
+    current_step = 0 ;
+    item_area.innerHTML = '' ;
+    show_item() ;
+  }
+}
+//-->
+</script>
+</head>
+
+<body onLoad="defaultPage('rule/rule_1.htm'); show();">
+<table height="25" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="20">&nbsp;</td>
+    <td width="11" background="images/menu_left.gif">&nbsp;</td>
+    <td width="5" style="background-color: #CECCB2">&nbsp;</td>
+    <td id="item_area" align="left" style="background-color: #CECCB2">
+  	  <table height="25" border="0" cellspacing="0" cellpadding="0">
+	    <tr>
+		  <td width="85" align="center"><a href="rule/rule_1.htm">規則章程</a></td>
+		  <td width="85" align="center"><a href="statistics.htm">隊伍統計</a></td>
+		  <td width="85" align="center"><a href="procedure.htm">賽程表</a></td>
+		  <td width="85" align="center"><a href="map/map.htm">場地位置</a></td>
+		  <td width="85" align="center"><a href="final.htm">比賽結果</a></td>
+		</tr>
+	  </table>
+	</td>
+    <td width="5" style="background-color: #CECCB2">&nbsp;</td>
+    <td width="11" background="images/menu_right.gif">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,9 @@
+vti_encoding:SR|utf8-nl
+vti_author:SR|ROOM305-18\\student
+vti_modifiedby:SR|ROOM305-18\\student
+vti_timelastmodified:TR|20 Feb 2008 11:22:41 -0000
+vti_timecreated:TR|20 Feb 2008 11:22:41 -0000
+vti_cacheddtm:TX|20 Feb 2008 11:22:41 -0000
+vti_filesize:IR|29976
+vti_extenderversion:SR|6.0.2.5516
+vti_backlinkinfo:VX|sayap4-2.htm sayap4-1.htm sayap4c.htm sayap3-1.htm sayap7.htm sayap6.htm sayap4d.htm sayap7-1.htm sayap4i.htm sayap2-1.htm sayap5.htm sayap4.htm sayap4b.htm sayap4a.htm sayap3a.htm index2.htm sayap4g.htm sayap4h.htm sayap3.htm sayap1.htm sayap2.htm index.php sayap4f.htm sayap4e.htm
