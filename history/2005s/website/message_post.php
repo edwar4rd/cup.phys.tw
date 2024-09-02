@@ -8,12 +8,12 @@
         <table width="480" border="0" cellspacing="1" bordercolor="#000099" bgcolor="#FFFFFF">
           <tr> 
             <td height="10" colspan="2" bgcolor="#006699">
-              <div align="center"><font color="#EEEEEE" size="4">│Xл╚пdиекO</font></div>
+              <div align="center"><font color="#EEEEEE" size="4">шикховчХЩшиАцЭ┐</font></div>
             </td>
           </tr>
           <tr> 
             <td height="30" bgcolor="#99CCFF"> 
-              <div align="center">пdиедH</div>
+              <div align="center">чХЩшиАф║║</div>
             </td>
             <td height="30" bgcolor="#99CCFF"> 
               <input type="text" name="user" size="20">
@@ -29,7 +29,7 @@
           </tr>
           <tr> 
             <td height="23" bgcolor="#99CCFF"> 
-              <div align="center">пdиееD├D</div>
+              <div align="center">чХЩшиАф╕╗щбМ</div>
             </td>
             <td height="23" bgcolor="#99CCFF"> 
               <input type="text" name="title" size="36">
@@ -37,7 +37,7 @@
           </tr>
           <tr> 
             <td height="80"> 
-              <div align="center">пdиед║оe</div>
+              <div align="center">чХЩшиАхЕзхо╣</div>
             </td>
             <td height="80"> 
               <textarea name="content" rows="10" cols="35"></textarea>
@@ -45,16 +45,16 @@
             </td>
           </tr>
           <tr> 
-            <td height="80" align="center">пdие▒K╜X</td>
+            <td height="80" align="center">чХЩшиАхпЖчв╝</td>
             <td height="80">
               <input type="password" name="pass" size="20" maxlength="20"><font color="#FF0000"> 
-				(┐щдJ▒K╜XеHи╛еLдHн╫зя)</font></td>
+				(ш╝╕хЕехпЖчв╝ф╗ещШ▓ф╗Цф║║ф┐оцФ╣)</font></td>
           </tr>
           <tr> 
             <td height="25" colspan="2" bgcolor="#006699"> 
               <div align="center"> 
-                <input type="reset" name="Reset" value="▓M░гнл╢ё">
-                <input type="submit" name="Submit" value="░eеXпdие">
+                <input type="reset" name="Reset" value="ц╕ЕщЩдщЗНхбл">
+                <input type="submit" name="Submit" value="щАБхЗ║чХЩшиА">
               </div>
             </td>
           </tr>
@@ -66,4 +66,4 @@
   </form>
 <p><br>
 Copyright(Physics) 2004 [NCKU]. All rights reserved.<br>
-н╫нqдщ┤┴бG <!--webbot bot="TimeStamp" s-type="Edited" s-format="%Y ж~ %m ды %d дщ" startspan -->2005 ж~ 04 ды 03 дщ<!--webbot bot="TimeStamp" i-checksum="9824" endspan -->бC</p>
+ф┐ошиВцЧецЬЯя╝Ъ <!--webbot bot="TimeStamp" s-type="Edited" s-format="%Y х╣┤ %m цЬИ %d цЧе" startspan -->2005 х╣┤ 04 цЬИ 03 цЧе<!--webbot bot="TimeStamp" i-checksum="9824" endspan -->уАВ</p>

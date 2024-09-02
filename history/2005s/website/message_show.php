@@ -1,12 +1,12 @@
 <?
-	include("up.htm"); // ¥~±¾ºô­¶¤W¤è¥\¯à¦C
+	include("up.htm"); // å¤–æ›ç¶²é ä¸Šæ–¹åŠŸèƒ½åˆ—
 	include("db_conn.php");
 	include("db_func.php");
 
-	// ¨ú¥X«ü©wªº¯d¨¥¸ê®Æ BEGIN
+	// å–å‡ºæŒ‡å®šçš„ç•™è¨€è³‡æ–™ BEGIN
 	$SQLStr = "SELECT * FROM message WHERE m_id = '$m_id'";
 	$res = db_query($SQLStr);
-	// ¨ú¥X«ü©wªº¯d¨¥¸ê®Æ END
+	// å–å‡ºæŒ‡å®šçš„ç•™è¨€è³‡æ–™ END
 
 	$row = db_fetch_array($res);
 ?>
@@ -30,43 +30,43 @@ window.open("message_update.php?m_id="+m_id1+"&pass="+pass1,"update","width=640,
         <table width="549" border="1" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
           <tr> 
 	    <td bgcolor="#FFFFFF" align="center">
-              <a href="message_reply.php?m_id=<?=$m_id?>">¦^ÂĞ¯d¨¥</a>
+              <a href="message_reply.php?m_id=<?=$m_id?>">å›è¦†ç•™è¨€</a>
             </td>
             <td colspan="3" bgcolor="#CCCCCC" align="center"><b><font size="4">
-              ³X«È¯d¨¥¸Ô²Ó¤º®e</font></b>
+              è¨ªå®¢ç•™è¨€è©³ç´°å…§å®¹</font></b>
             </td>
           </tr>
           <tr> 
-            <td bgcolor="#99CCFF" align="center">¯d¨¥¤H</td>
+            <td bgcolor="#99CCFF" align="center">ç•™è¨€äºº</td>
             <td colspan="3" align="center"><a href="mailto:<?=$row['m_mail']?>">
              <?=$row['m_user']?></a>
             </td>
           </tr>
           <tr> 
-            <td height="21" bgcolor="#CC9999" align="center">¯d¨¥¥DÃD</td>
+            <td height="21" bgcolor="#CC9999" align="center">ç•™è¨€ä¸»é¡Œ</td>
             <td colspan="3" height="21" bgcolor="#FFFFFF" align="center">
               <?=$row['m_title']?>
             </td>
           </tr>
           <tr bgcolor="#FFCCCC"> 
-            <td colspan="4" align="center">¯d¨¥¤º®e</td>
+            <td colspan="4" align="center">ç•™è¨€å…§å®¹</td>
           </tr>
           <tr> 
             <td colspan="4" align="center"><?=$row['m_content']?></td>
           </tr>
           <tr> 
-            <td bgcolor="#99CCCC" align="center">¯d¨¥¤é´Á</td>
+            <td bgcolor="#99CCCC" align="center">ç•™è¨€æ—¥æœŸ</td>
             <td bgcolor="#FFFFFF" align="center"><?=$row['m_time']?></td>
-            <td bgcolor="#99CCCC" align="center">¨Ó·½¦a</td>
+            <td bgcolor="#99CCCC" align="center">ä¾†æºåœ°</td>
             <td bgcolor="#FFFFFF" align="center"><?=$row['m_ip']?></td>
           </tr>
           <tr> 
             <td colspan="4" bgcolor="#CCCCCC" align="center"> 
-                <input type="button" name="submit1" value="­×§ï¯d¨¥" onClick="update();">
-                <input type="submit" name="Submit" value="§R°£¯d¨¥">
+                <input type="button" name="submit1" value="ä¿®æ”¹ç•™è¨€" onClick="update();">
+                <input type="submit" name="Submit" value="åˆªé™¤ç•™è¨€">
 		<input type = "password" name="pass" size="10">
 		<input type = "hidden" name="m_id" value="<?=$m_id?>">
-                <font color="#FF0000">(»İ¿é¤J¦¹½g¯d¨¥ªº±K½X) </font>
+                <font color="#FF0000">(éœ€è¼¸å…¥æ­¤ç¯‡ç•™è¨€çš„å¯†ç¢¼) </font>
             </td>
           </tr>
         </table>
@@ -77,4 +77,4 @@ window.open("message_update.php?m_id="+m_id1+"&pass="+pass1,"update","width=640,
 </form>
 <p><br>
 Copyright(Physics) 2004 [NCKU]. All rights reserved.<br>
-­×­q¤é´Á¡G <!--webbot bot="TimeStamp" s-type="Edited" s-format="%Y ¦~ %m ¤ë %d ¤é" startspan -->2005 ¦~ 04 ¤ë 03 ¤é<!--webbot bot="TimeStamp" i-checksum="9824" endspan -->¡C</p>
+ä¿®è¨‚æ—¥æœŸï¼š <!--webbot bot="TimeStamp" s-type="Edited" s-format="%Y å¹´ %m æœˆ %d æ—¥" startspan -->2005 å¹´ 04 æœˆ 03 æ—¥<!--webbot bot="TimeStamp" i-checksum="9824" endspan -->ã€‚</p>

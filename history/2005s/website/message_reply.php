@@ -1,11 +1,11 @@
 <?
-	// и·еX│ц╜gпdиед║оe BEGIN
+	// хПЦхЗ║хЦочпЗчХЩшиАхЕзхо╣ BEGIN
 	include("db_conn.php");
 	include("db_func.php");
 	$SQLStr = "SELECT * FROM message WHERE m_id='$m_id'";
 	$res = db_query("$SQLStr");
 	$row = db_fetch_array($res);
-	// и·еX│ц╜gпdиед║оe END
+	// хПЦхЗ║хЦочпЗчХЩшиАхЕзхо╣ END
 ?>
 
 <body background="images/bg1.gif">
@@ -18,11 +18,11 @@
         <table width="480" border="0" cellspacing="1" bordercolor="#000099" bgcolor="#FFFFFF">
           <tr> 
             <td height="10" colspan="2" bgcolor="#006699">
-              <div align="center"><font color="#EEEEEE" size="4">│Xл╚пdиекO</font></div>
+              <div align="center"><font color="#EEEEEE" size="4">шикховчХЩшиАцЭ┐</font></div>
             </td>
           </tr>
           <tr> 
-            <td height="30" bgcolor="#99CCFF" align="center">пdиедH</td>
+            <td height="30" bgcolor="#99CCFF" align="center">чХЩшиАф║║</td>
             <td height="30" bgcolor="#99CCFF"> 
               <input type="text" name="user" size="20">
             </td>
@@ -37,16 +37,16 @@
           </tr>
           <tr> 
             <td height="23" bgcolor="#99CCFF"> 
-              <div align="center">пdиееD├D</div>
+              <div align="center">чХЩшиАф╕╗щбМ</div>
             </td>
             <td height="23" bgcolor="#99CCFF"> 
-              <!--------- и·еXпdие╝╨├Dи├нниюдг▒oн╫зя ----------->
+              <!--------- хПЦхЗ║чХЩшиАциЩщбМф╕жщЩРхИ╢ф╕Нх╛Чф┐оцФ╣ ----------->
               <input type="text" name="title" size="36" value="&lt;?echo &quot;Re: &quot; . $row['m_title']?&gt;" disabled>
             </td>
           </tr>
           <tr> 
             <td height="80"> 
-              <div align="center">пdиед║оe</div>
+              <div align="center">чХЩшиАхЕзхо╣</div>
             </td>
             <td height="80"> 
               <p> 
@@ -58,8 +58,8 @@
           <tr> 
             <td height="25" colspan="2" bgcolor="#006699"> 
               <div align="center"> 
-                <input type="reset" name="Reset" value="▓M░гнл╢ё">
-                <input type="submit" name="Submit" value="░eеXпdие">
+                <input type="reset" name="Reset" value="ц╕ЕщЩдщЗНхбл">
+                <input type="submit" name="Submit" value="щАБхЗ║чХЩшиА">
               </div>
             </td>
           </tr>
@@ -71,5 +71,5 @@
   </form>
 <p><br>
 Copyright(Physics) 2004 [NCKU]. All rights reserved.<br>
-н╫нqдщ┤┴бG <!--webbot bot="TimeStamp" s-type="Edited" s-format="%Y ж~ %m ды %d дщ" startspan -->2005 ж~ 04 ды 03 дщ<!--webbot bot="TimeStamp" i-checksum="9824" endspan -->бC</p>
+ф┐ошиВцЧецЬЯя╝Ъ <!--webbot bot="TimeStamp" s-type="Edited" s-format="%Y х╣┤ %m цЬИ %d цЧе" startspan -->2005 х╣┤ 04 цЬИ 03 цЧе<!--webbot bot="TimeStamp" i-checksum="9824" endspan -->уАВ</p>
 

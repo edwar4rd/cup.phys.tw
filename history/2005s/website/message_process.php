@@ -4,46 +4,46 @@
 
  	function ChangWord($NewWord){
 
-		// ±N enter ²Å¸¹´«¬° <br>
+		// å°‡ enter ç¬¦è™Ÿæ›ç‚º <br>
     		$NewWord=str_replace("\r\n","<br>",$NewWord);
 
-		// ±N [']+ ²Å¸¹,´«¬° `
+		// å°‡ [']+ ç¬¦è™Ÿ,æ›ç‚º `
    		$NewWord=ereg_replace("[']+", "`", $NewWord);
 		return $NewWord;
  	}
 
-	$time = date("Y-m-d g:i:s"); // ¨ú±o¥Ø«e¤é´Á¤Î®É¶¡
-	$ip = $REMOTE_ADDR; // ¨ú±o¨Ï¥ÎªÌ IP
+	$time = date("Y-m-d g:i:s"); // å–å¾—ç›®å‰æ—¥æœŸåŠæ™‚é–“
+	$ip = $REMOTE_ADDR; // å–å¾—ä½¿ç”¨è€… IP
 
-	    // ³B²z¯d¨¥ªÌµo¥¬¯d¨¥ªº°Ê§@ BEGIN
+	    // è™•ç†ç•™è¨€è€…ç™¼å¸ƒç•™è¨€çš„å‹•ä½œ BEGIN
 	    if ($check==add)
 	    {
 		$SQLStr = "INSERT INTO message (m_title, m_content, m_time, m_user, m_mail, m_pass, m_ip) ";
 		$SQLStr .= " VALUES('$title', '" . ChangWord($content) . "', '$time', '$user', '$email', '$pass', '$ip') ";
-	      	$message = "·s¼W¯d¨¥§¹¦¨¡I";
+	      	$message = "æ–°å¢ç•™è¨€å®Œæˆï¼";
 	    }
-	    // ³B²z¯d¨¥ªÌµo¥¬¯d¨¥ªº°Ê§@ END
+	    // è™•ç†ç•™è¨€è€…ç™¼å¸ƒç•™è¨€çš„å‹•ä½œ END
 
-	    // ³B²z¯d¨¥ªÌ§R°£¯d¨¥ªº°Ê§@ BEGIN
+	    // è™•ç†ç•™è¨€è€…åˆªé™¤ç•™è¨€çš„å‹•ä½œ BEGIN
 	    if ($check==del)
 	    {
-		include("idcheck.php"); // ¥~±¾¨­¤ÀÀË¬d¤¸¥ó
+		include("idcheck.php"); // å¤–æ›èº«åˆ†æª¢æŸ¥å…ƒä»¶
 
 		$SQLStr = "DELETE FROM message WHERE m_id = $m_id";
-		$message = "§R°£¯d¨¥§¹¦¨¡I";
+		$message = "åˆªé™¤ç•™è¨€å®Œæˆï¼";
 	    }
-	    // ³B²z¯d¨¥ªÌ§R°£¯d¨¥ªº°Ê§@ END
+	    // è™•ç†ç•™è¨€è€…åˆªé™¤ç•™è¨€çš„å‹•ä½œ END
 
-	    // ³B²z¯d¨¥ªÌ§ó·s¯d¨¥ªº°Ê§@ BEGIN
+	    // è™•ç†ç•™è¨€è€…æ›´æ–°ç•™è¨€çš„å‹•ä½œ BEGIN
 	    if ($check==upd)
     	    {
-		include("idcheck.php"); // ¥~±¾¨­¤ÀÀË¬d¤¸¥ó
+		include("idcheck.php"); // å¤–æ›èº«åˆ†æª¢æŸ¥å…ƒä»¶
 
 		$SQLStr = "UPDATE message SET m_title='$title', m_content='" . ChangWord($content) . "', m_time='$time', ";
 		$SQLStr .= "m_mail='$email', m_ip='$ip' WHERE m_id = '$m_id'";
-		$message = "§ó·s¯d¨¥§¹¦¨¡I";
+		$message = "æ›´æ–°ç•™è¨€å®Œæˆï¼";
 	    }
-	    // ³B²z¯d¨¥ªÌ§ó·s¯d¨¥ªº°Ê§@ END
+	    // è™•ç†ç•™è¨€è€…æ›´æ–°ç•™è¨€çš„å‹•ä½œ END
 
 	    db_query($SQLStr);
 ?>
