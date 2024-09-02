@@ -1,4 +1,4 @@
-// ¥H·sµøµ¡¶}±Ò¹Ï¤ù
+// ä»¥æ–°è¦–çª—é–‹å•Ÿåœ–ç‰‡
 
 function ImageWindow(filename, imagewidth, imageheight) {
   var imagewidth_f = imagewidth + 20 ;

@@ -22,7 +22,7 @@ function getData($dbName)
 define('STAT_BASE', dirname(__FILE__));
 require STAT_BASE . '/lib/base.php';
 
-define('LOC_UNKNOWN', '¥¼ª¾¦a°Ï');
+define('LOC_UNKNOWN', 'æœªçŸ¥åœ°å€');
 
 $toShow = array();
 $today  = getdate();
@@ -51,7 +51,7 @@ $actionID = getFormData('actionID', 'TotalData');
 
 switch ($actionID) {
 //******************************************************************************
-    case 'TotalData'://Á`Åé¼Æ¾Ú
+    case 'TotalData'://ç¸½é«”æ•¸æ“š
 
         $starttime = file($datadir. "start.db");
         $starttime = intval($starttime[0]);
@@ -83,7 +83,7 @@ switch ($actionID) {
         break;
 
 //******************************************************************************
-    case 'RecentlyRecord': //³Ì·s³X°İ°O¿ı
+    case 'RecentlyRecord': //æœ€æ–°è¨ªå•è¨˜éŒ„
         $statrecent = getData("recent.db");
         $recentlyArray = array();
 
@@ -96,7 +96,7 @@ switch ($actionID) {
         break;
 
 //******************************************************************************
-    case 'HoursStat': //«ö¤p®É²Î­p¼Æ¾Ú
+    case 'HoursStat': //æŒ‰å°æ™‚çµ±è¨ˆæ•¸æ“š
         $statdate = getData("date.db");
         $hourStat = $statdate['hour'];
 
@@ -133,7 +133,7 @@ switch ($actionID) {
         break;
 
 //******************************************************************************
-    case 'DayStat': //«ö¤Ñ²Î­p¼Æ¾Ú
+    case 'DayStat': //æŒ‰å¤©çµ±è¨ˆæ•¸æ“š
         $statdate = getData("date.db");
         $dayStat = $statdate['day'];
 
@@ -178,7 +178,7 @@ switch ($actionID) {
         break;
 
 //******************************************************************************
-    case 'WeekStat': //«ö¬P´Á²Î­p¼Æ¾Ú
+    case 'WeekStat': //æŒ‰æ˜ŸæœŸçµ±è¨ˆæ•¸æ“š
         $statdate = getData("date.db");
         $weekStat = $statdate['week'];
 
@@ -215,7 +215,7 @@ switch ($actionID) {
         break;
 
 //******************************************************************************
-    case 'MonthStat': //«ö¤ë©M¦~²Î­p¼Æ¾Ú
+    case 'MonthStat': //æŒ‰æœˆå’Œå¹´çµ±è¨ˆæ•¸æ“š
         $statdate = getData("date.db");
         $monthStat = $statdate['month'];
         $yearStat = $statdate['year'];
@@ -266,7 +266,7 @@ switch ($actionID) {
         break;
 
 //******************************************************************************
-    case 'ClientSoftwareStat': //ÂsÄı¾¹©M§@·~¨t²Î
+    case 'ClientSoftwareStat': //ç€è¦½å™¨å’Œä½œæ¥­ç³»çµ±
         $statdate = getData("date.db");
         $browserArray = $statdate['browser'];
         $osArray      = $statdate['os'];

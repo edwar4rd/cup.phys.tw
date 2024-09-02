@@ -23,7 +23,7 @@ function cycle()
     $cycleArray['index']++;
 }
 
-//:~ªğ¦^¦ì¸m«H®§
+//:~è¿”å›ä½ç½®ä¿¡æ¯
 function getLocationInfo($ip)
 {
     $ipa = split("[\.]",$ip);

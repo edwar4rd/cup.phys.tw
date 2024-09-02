@@ -47,7 +47,7 @@ echo"document.write(\"    <td width='25'></td>\");";
 echo"document.write(\"    <td width='58' align='center' valign='middle'>\");";
 echo"document.write(\"      <marquee behavior='loop' scrollDelay='100' scrollAmount='3' onmouseover=\\\"this.stop()\\\" onmouseout=\\\"this.start()\\\" style='font-size: 11px; line-height=15px'>\");";
 echo"document.write(\"        <a href='".$conf['stat_url']."/index.php' target='_blank' style='color: #ffffff; text-decoration: none'>\");";
-echo"document.write(\"          <font face='Tahoma,·s²Ó©úÅé' color='#FFFFFF'>Á`³X°İ¶q: ".$vtotal." &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;¥»¤ë³X°İ: ".$vthismonth." &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;¤µ¤é³X°İ: ".$vtoday." &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;¬Q¤é³X°İ: ".$vyesterday."</font>\");";
+echo"document.write(\"          <font face='Tahoma,æ–°ç´°æ˜é«”' color='#FFFFFF'>ç¸½è¨ªå•é‡: ".$vtotal." &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;æœ¬æœˆè¨ªå•: ".$vthismonth." &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ä»Šæ—¥è¨ªå•: ".$vtoday." &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;æ˜¨æ—¥è¨ªå•: ".$vyesterday."</font>\");";
 echo"document.write(\"        </a>\");";
 echo"document.write(\"      </marquee>\");";
 echo"document.write(\"    </td>\");";

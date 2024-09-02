@@ -1,7 +1,7 @@
 <table class="tbody" cellspacing="1" align="center" cellpadding="0">
     <tr>
         <td class="thead">
-            &nbsp; <img src="images/tb_title.gif" align="absmiddle"> &nbsp;©Т¦і24¤p®ЙіX°Э¶q
+            &nbsp; <img src="images/tb_title.gif" align="absmiddle"> &nbsp;ж‰Ђжњ‰24е°Џж™‚иЁЄе•Џй‡Џ
         </td>
     </tr>
     <tr>
@@ -24,7 +24,7 @@
                 <?php if ($value['visittimes'] != 0) {?>
                 <img src="images/v_bar.gif"
                      height="<?= $value['height'] ?>" width="11"
-                     alt=" <?= $value['whichhour'] ?> ®Й, іX°Э <?= $value['visittimes'] ?> ¦ё<br>
+                     alt=" <?= $value['whichhour'] ?> ж™‚, иЁЄе•Џ <?= $value['visittimes'] ?> ж¬Ў<br>
 <?= $value['percent'] ?>">
                 <?php } ?>
                 </td>
@@ -41,7 +41,7 @@
                 <?php foreach ($allhourlist as $value) { ?>
                 <td width="15" valign="bottom" align="center" class="vback">
                 <span style="font-family: Arial; letter-spacing: -1; cursor: default"
-                     title=" <?= $value['whichhour'] ?> ®Й, іX°Э <?= $value['visittimes'] ?> ¦ё<br>
+                     title=" <?= $value['whichhour'] ?> ж™‚, иЁЄе•Џ <?= $value['visittimes'] ?> ж¬Ў<br>
 <?= $value['percent'] ?>">
                 <?= $value['whichhour'] ?>
                 </span>

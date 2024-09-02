@@ -1,7 +1,7 @@
 <table class="tbody" cellspacing="1" align="center" cellpadding="0">
     <tr>
         <td class="thead">
-            &nbsp; <img src="images/tb_title.gif" align="absmiddle"> &nbsp;³X°ÝªÌÂsÄý¾¹¤Î¼Æ¶q
+            &nbsp; <img src="images/tb_title.gif" align="absmiddle"> &nbsp;è¨ªå•è€…ç€è¦½å™¨åŠæ•¸é‡
         </td>
     </tr>
     <tr>
@@ -17,13 +17,13 @@
         <tr>
             <td style="padding-left: 20px">
                 <span style="cursor: default" title="<?= $value['whichbrowser'] ?><br>
-³X°Ý <?= $value['visittimes'] ?> ¦¸, <?= $value['percent'] ?>"><?= $value['whichbrowser'] ?></span>
+è¨ªå• <?= $value['visittimes'] ?> æ¬¡, <?= $value['percent'] ?>"><?= $value['whichbrowser'] ?></span>
             </td>
             <td class="hback" align="left" style="background: url('images/h_back.gif') repeat-y;">
                 <img src="images/h_bar.gif"
                     width="<?= $value['height'] ?>" height="11"
                     alt="<?= $value['whichbrowser'] ?><br>
-³X°Ý <?= $value['visittimes'] ?> ¦¸, <?= $value['percent'] ?>">
+è¨ªå• <?= $value['visittimes'] ?> æ¬¡, <?= $value['percent'] ?>">
                 <span style="font-family:Arial; letter-spacing:-1"><?= $value['visittimes'] ?></span>
             </td>
         <tr>

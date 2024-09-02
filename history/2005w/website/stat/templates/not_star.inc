@@ -3,7 +3,7 @@
 <br>
 
 <p align="center">
-<font size="2" color="red">╔ь╚eаы╗S╕Ё╡н╜p&#36164;╝ф║A╫п╣y╕Z╕AЁX╟щ║Aабаб║I║I║I</font>
+<font size="2" color="red">Г⌡╝Е┴█И┌└Ф╡▓Ф°┴Г╣╠Х╗┬&#36164;Ф√≥О╪▄Х╚▀Г╗█Е░▌Е├█Х╗╙Е∙▐О╪▄Х╛²Х╛²О╪│О╪│О╪│</font>
 </p>
 <br>
 <br>

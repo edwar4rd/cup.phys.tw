@@ -1,7 +1,7 @@
 <table class="tbody" cellspacing="1" align="center" cellpadding="0">
     <tr>
         <td class="thead">
-            &nbsp; <img src="images/tb_title.gif" align="absmiddle"> &nbsp;©Т¦і 12 ­У¤ліX°Э¶q
+            &nbsp; <img src="images/tb_title.gif" align="absmiddle"> &nbsp;ж‰Ђжњ‰ 12 еЂ‹жњ€иЁЄе•Џй‡Џ
         </td>
     </tr>
     <tr>
@@ -24,7 +24,7 @@
                 <?php if ($value['visittimes'] != 0) {?>
                 <img src="images/v_bar.gif"
                      height="<?= $value['height'] ?>" width="11"
-                     alt=" <?= $value['whichmonth'] ?> ¤л, іX°Э <?= $value['visittimes'] ?> ¦ё<br>
+                     alt=" <?= $value['whichmonth'] ?> жњ€, иЁЄе•Џ <?= $value['visittimes'] ?> ж¬Ў<br>
 <?= $value['percent'] ?>">
                 <?php } ?>
                 </td>
@@ -41,7 +41,7 @@
                 <?php foreach ($allmonthlist as $value) { ?>
                 <td width="25" valign="bottom" align="center" class="vback">
                 <span style="font-family: Arial; letter-spacing: -1; cursor: default"
-                     title=" <?= $value['whichmonth'] ?> ¤л, іX°Э <?= $value['visittimes'] ?> ¦ё<br>
+                     title=" <?= $value['whichmonth'] ?> жњ€, иЁЄе•Џ <?= $value['visittimes'] ?> ж¬Ў<br>
 <?= $value['percent'] ?>">
                 <?= $value['whichmonth'] ?>
                 </span>

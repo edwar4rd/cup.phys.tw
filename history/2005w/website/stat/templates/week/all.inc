@@ -1,7 +1,7 @@
 <table class="tbody" cellspacing="1" align="center" cellpadding="0">
     <tr>
         <td class="thead">
-            &nbsp; <img src="images/tb_title.gif" align="absmiddle"> &nbsp;©Ò¦³¶g³X°İ¶q
+            &nbsp; <img src="images/tb_title.gif" align="absmiddle"> &nbsp;æ‰€æœ‰é€±è¨ªå•é‡
         </td>
     </tr>
     <tr>
@@ -24,7 +24,7 @@
                 <?php if ($value['visittimes'] != 0) {?>
                 <img src="images/v_bar.gif"
                      height="<?= $value['height'] ?>" width="11"
-                     alt=" ¶g<?= $weekname[$value['whichweek']] ?>, ³X°İ <?= $value['visittimes'] ?> ¦¸<br>
+                     alt=" é€±<?= $weekname[$value['whichweek']] ?>, è¨ªå• <?= $value['visittimes'] ?> æ¬¡<br>
 <?= $value['percent'] ?>">
                 <?php } ?>
                 </td>
@@ -41,7 +41,7 @@
                 <?php foreach ($allweeklist as $value) { ?>
                 <td width="25" valign="bottom" align="center" class="vback">
                 <span style="cursor: default; <?php if ($value['whichweek']==6) {?>color: green;<?php } elseif ($value['whichweek']==0) { ?>color:red;<?php } ?>"
-                     title=" ¶g<?= $weekname[$value['whichweek']] ?>, ³X°İ <?= $value['visittimes'] ?> ¦¸<br>
+                     title=" é€±<?= $weekname[$value['whichweek']] ?>, è¨ªå• <?= $value['visittimes'] ?> æ¬¡<br>
 <?= $value['percent'] ?>">
                 <?= $weekname[$value['whichweek']] ?>
                 </span>
