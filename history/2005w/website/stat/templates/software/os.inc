@@ -1,7 +1,7 @@
 <table class="tbody" cellspacing="1" align="center" cellpadding="0">
     <tr>
         <td class="thead">
-            &nbsp; <img src="images/tb_title.gif" align="absmiddle"> &nbsp;�X�ݪ̾ާ@�t�Τμƶq
+            &nbsp; <img src="images/tb_title.gif" align="absmiddle"> &nbsp;訪問者操作系統及數量
         </td>
     </tr>
     <tr>
@@ -17,13 +17,13 @@
         <tr>
             <td style="padding-left: 20px">
                 <span style="cursor: default" title="<?= $value['whichos'] ?><br>
-�X�� <?= $value['visittimes'] ?> ��, <?= $value['percent'] ?>"><?= $value['whichos'] ?></span>
+訪問 <?= $value['visittimes'] ?> 次, <?= $value['percent'] ?>"><?= $value['whichos'] ?></span>
             </td>
             <td class="hback" align="left" style="background: url('images/h_back.gif') repeat-y;">
                 <img src="images/h_bar.gif"
                     width="<?= $value['height'] ?>" height="11"
                     alt="<?= $value['whichos'] ?><br>
-�X�� <?= $value['visittimes'] ?> ��, <?= $value['percent'] ?>">
+訪問 <?= $value['visittimes'] ?> 次, <?= $value['percent'] ?>">
                 <span style="font-family:Arial; letter-spacing:-1"><?= $value['visittimes'] ?></span>
             </td>
         <tr>

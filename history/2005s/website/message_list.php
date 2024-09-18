@@ -1,14 +1,14 @@
 <? 	
     
-    // ¶Ч¤JЁв­Уёк®Ж®w¤ёҐу BEGIN
+    // еЊЇе…Ґе…©еЂ‹иі‡ж–™еє«е…ѓд»¶ BEGIN
 	include("db_conn.php");
 	include("db_func.php");
-	// ¶Ч¤JЁв­Уёк®Ж®w¤ёҐу END
+	// еЊЇе…Ґе…©еЂ‹иі‡ж–™еє«е…ѓд»¶ END
 
-	// ЁъҐXЁМµoҐ¬®Й¶Ў»јґо±Ж§ЗЄєЇdЁҐёк®Ж¤§ SQL »yЄk
+	// еЏ–е‡єдѕќз™јеёѓж™‚й–“йЃћжё›жЋ’еєЏзљ„з•™иЁЂиі‡ж–™д№‹ SQL иЄћжі•
 	$SQLStr = "SELECT * FROM message ORDER BY m_time DESC";
 
-	$res = db_query($SQLStr); // °х¦ж SQL ©RҐO
+	$res = db_query($SQLStr); // еџ·иЎЊ SQL е‘Ѕд»¤
 
 ?>
 
@@ -18,49 +18,49 @@
 	<img border="0" src="images/guestTitle.gif" width="471" height="62"></p>
 	<hr>
 	<p><font color="#800000">
-§Ъ­М§Ж±жЄѕ№D±z№п§Ъ­МБ|їмЄє¤jЄ«¬Ч¦і¦у·NЁЈЎC¦]¦№ЅР±N±zЄє·NЁЈЇd¦bіX«И·NЁЈДж¤єЎAіoјЛ§Ъ­М¤~Їа±N±zЄє·QЄk»PЁдҐLіX«И¤АЁЙЎC</font></p>
+ж€‘еЂ‘еёЊжњ›зџҐйЃ“ж‚Ёе°Ќж€‘еЂ‘и€‰иѕ¦зљ„е¤§з‰©з›ѓжњ‰дЅ•ж„Џи¦‹гЂ‚е› ж­¤и«‹е°‡ж‚Ёзљ„ж„Џи¦‹з•™ењЁиЁЄе®ўж„Џи¦‹ж¬„е…§пјЊйЂ™жЁЈж€‘еЂ‘ж‰ЌиѓЅе°‡ж‚Ёзљ„жѓіжі•и€‡е…¶д»–иЁЄе®ўе€†дє«гЂ‚</font></p>
 	<hr>
 
-  <p>Ў@<?include("up.htm");?></p>
+  <p>гЂЂ<?include("up.htm");?></p>
 
   <table width="750" border="0" align="center" cellpadding="0" cellspacing="1">
     <tr bgcolor="#0066CC"> 
       <td width="290" align="center">
-        <font color="#FFFFFF">ЇdЁҐҐDГD</font>
+        <font color="#FFFFFF">з•™иЁЂдё»йЎЊ</font>
       </td>
       <td width="300" align="center"> 
-        <font color="#FFFFFF">ЇdЁҐ¤є®e</font>
+        <font color="#FFFFFF">з•™иЁЂе…§е®№</font>
       </td>
       <td width="60"> 
-        <font color="#FFFFFF">ЇdЁҐ¤H</font>
+        <font color="#FFFFFF">з•™иЁЂдєє</font>
       </td>
       <td width="100"> 
-        <font color="#FFFFFF">ЇdЁҐ®Й¶Ў</font>
+        <font color="#FFFFFF">з•™иЁЂж™‚й–“</font>
       </td>
     </tr>
 <?
 
-	if (db_num_rows($res)>0) // ­Yёк®ЖЄн¤¤¦іёк®Ж
+	if (db_num_rows($res)>0) // и‹Ґиі‡ж–™иЎЁдё­жњ‰иі‡ж–™
 	{
 
-		$num = db_num_rows($res); // Ёъ±oёк®Жµ§јЖ
-		$check = $p+10; // ЁC­¶§мЁъ 10 µ§ёк®Ж
+		$num = db_num_rows($res); // еЏ–еѕ—иі‡ж–™з­†ж•ё
+		$check = $p+10; // жЇЏй ЃжЉ“еЏ– 10 з­†иі‡ж–™
 
-		// §eІ{ЇdЁҐ¦CЄнЄєДж¦м¤є®e BEGIN
-		for ($i=0;$i<=$num;$i++) // ҐОЁУ§eІ{¦hµ§ЇdЁҐёк®ЖЄє°j°й
+		// е‘€зЏѕз•™иЁЂе€—иЎЁзљ„ж¬„дЅЌе…§е®№ BEGIN
+		for ($i=0;$i<=$num;$i++) // з”Ёдѕ†е‘€зЏѕе¤љз­†з•™иЁЂиі‡ж–™зљ„иїґењ€
 		{
 		  $row = db_fetch_array($res);
 
-		  // їпЁъІД $p µ§Ём $check µ§ёк®Ж
+		  // йЃёеЏ–з¬¬ $p з­†е€° $check з­†иі‡ж–™
 		  if ($i>=$p && $i<$check) 
 		  {
-			// §QҐО¬O§_іQѕг°ЈЁУ§PВ_Дж¦мЄє­IґєГC¦в
+			// е€©з”ЁжЇеђ¦иў«ж•ґй™¤дѕ†е€¤ж–·ж¬„дЅЌзљ„иѓЊж™ЇйЎЏи‰І
 			if ($i%2 == 0) 
 			  echo "<tr bgcolor='#DDDDDD'>";
 			else
 			  echo "<tr>";
 
-			// §PВ_ m_title Дж¦м¤є¦r¦к­И¬O§_¶W№L 15 ¦r¤ё
+			// е€¤ж–· m_title ж¬„дЅЌе…§е­—дёІеЂјжЇеђ¦и¶…йЃЋ 15 е­—е…ѓ
 			if (strlen($row['m_title'])>15)
 			{
 			  echo "<td width='280'><a href='message_show.php?m_id=".$row['m_id']."'>";
@@ -71,7 +71,7 @@
 			  echo "<td width='280'><a href='message_show.php?m_id=".$row['m_id']."'>";
 			  echo $row['m_title'] . "</a></td>";
 			}
-			// §PВ_ m_content Дж¦м¤є¦r¦к­И¬O§_¦іҐ]§t <br> ¦r¦к
+			// е€¤ж–· m_content ж¬„дЅЌе…§е­—дёІеЂјжЇеђ¦жњ‰еЊ…еђ« <br> е­—дёІ
 			if (stristr($row['m_content'],"<br>"))
 			{
 			  echo "<td width='300'><a href='message_show.php?m_id=".$row['m_id']."'>";
@@ -84,13 +84,13 @@
 			}
 			echo "<td width='60' align='center'><a href='mailto:". $row['m_mail'] . "'>" . $row['m_user'] . "</a></td>";
 
-			// ¶ИїпЁъ m_time Дж¦м¤є 16 ­У¦r¤ёЄєёк®Ж 
+			// еѓ…йЃёеЏ– m_time ж¬„дЅЌе…§ 16 еЂ‹е­—е…ѓзљ„иі‡ж–™ 
 			echo "<td width='130' align='center'>" . substr($row['m_time'],0,16) . "</td>";
 			echo "</tr>";
 			$j = $i+1;
 		  }
 		}
-		// §eІ{ЇdЁҐ¦CЄнЄєДж¦м¤є®e END
+		// е‘€зЏѕз•™иЁЂе€—иЎЁзљ„ж¬„дЅЌе…§е®№ END
 	}
 ?>
   </table>
@@ -99,39 +99,39 @@
     <tr>
       <td align="center">
 
-	<!--- ±N p ­Иі]¬° 0, ЕэјТІХ±qІД¤@µ§ёк®Ж¶}©l§мЁъ ---->
-        <a href="message_list.php?p=0">ІД¤@­¶</a>
+	<!--- е°‡ p еЂјиЁ­з‚є 0, и®“жЁЎзµ„еѕћз¬¬дёЂз­†иі‡ж–™й–‹е§‹жЉ“еЏ– ---->
+        <a href="message_list.php?p=0">з¬¬дёЂй Ѓ</a>
       </td>
       <td align="center">
 <?	
-	if ($p>9) // §PВ_¬O§_¦і¤W¤@­¶
+	if ($p>9) // е€¤ж–·жЇеђ¦жњ‰дёЉдёЂй Ѓ
 	{
 	  $last = (floor($j/10)*10)-10;
-	  echo "<a href='message_list.php?p=$last'>¤W¤@­¶</a>";
+	  echo "<a href='message_list.php?p=$last'>дёЉдёЂй Ѓ</a>";
 	}
 	else
-	  echo "¤W¤@­¶";
+	  echo "дёЉдёЂй Ѓ";
 ?>
       </td>
       <td align="center">
 <?	
-	if ($i>9 and $num>$check) // §PВ_¬O§_¦і¤U¤@­¶
-	  echo "<a href='message_list.php?p=$j'>¤U¤@­¶</a>";
+	if ($i>9 and $num>$check) // е€¤ж–·жЇеђ¦жњ‰дё‹дёЂй Ѓ
+	  echo "<a href='message_list.php?p=$j'>дё‹дёЂй Ѓ</a>";
 	else
-	  echo "¤U¤@­¶";
+	  echo "дё‹дёЂй Ѓ";
 ?>
 
       </td>
       <td align="center">
 <?	
-	if ($i>9) // §PВ_ҐШ«e§eІ{Єєµ§јЖ¤§«б¬O§_БЩ¦і­¶­±
+	if ($i>9) // е€¤ж–·з›®е‰Ќе‘€зЏѕзљ„з­†ж•ёд№‹еѕЊжЇеђ¦й‚„жњ‰й Ѓйќў
 	{
-	  // Ёъ±oіМ«б¤@­¶ЄєІД¤@µ§ёк®Ж
+	  // еЏ–еѕ—жњЂеѕЊдёЂй Ѓзљ„з¬¬дёЂз­†иі‡ж–™
 	  $final = floor($num/10)*10;
-	  echo "<a href='message_list.php?p=$final'>іМҐЅ­¶</a>";
+	  echo "<a href='message_list.php?p=$final'>жњЂжњ«й Ѓ</a>";
 	}
 	else
-	  echo "іМҐЅ­¶";
+	  echo "жњЂжњ«й Ѓ";
 	  include("down.htm");
 ?>
       </td>
@@ -139,5 +139,5 @@
   </table>
 	<p><br>
 Copyright(Physics) 2004 [NCKU]. All rights reserved.<br>
-­Ч­q¤йґБЎG <!--webbot bot="TimeStamp" s-type="Edited" s-format="%Y ¦~ %m ¤л %d ¤й" startspan -->2005 ¦~ 04 ¤л 03 ¤й<!--webbot bot="TimeStamp" i-checksum="9824" endspan -->ЎC</p>
+дї®иЁ‚ж—Ґжњџпјљ <!--webbot bot="TimeStamp" s-type="Edited" s-format="%Y е№ґ %m жњ€ %d ж—Ґ" startspan -->2005 е№ґ 04 жњ€ 03 ж—Ґ<!--webbot bot="TimeStamp" i-checksum="9824" endspan -->гЂ‚</p>
 

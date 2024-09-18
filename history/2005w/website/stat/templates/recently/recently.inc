@@ -1,15 +1,15 @@
 <table style="background-color: #000000; width: 100%; border: 0px;" cellspacing="1" align="center" cellpadding="4">
     <tr style="background-color: #CCE483">
         <td colspan="5">
-            &nbsp; <img src="images/tb_title.gif" align="absmiddle"> &nbsp;�̷s<?= $conf['record_limit'] ?>���X�ݰO��
+            &nbsp; <img src="images/tb_title.gif" align="absmiddle"> &nbsp;最新<?= $conf['record_limit'] ?>條訪問記錄
         </td>
     </tr>
     <tr style="background-color: #CCE483">
-        <td>�X�ݮɶ�</td>
-        <td>IP�a�}</td>
-        <td>�Q�X����</td>
-        <td>�Ӹ�����</td>
-        <td>�Ӧ�</td>
+        <td>訪問時間</td>
+        <td>IP地址</td>
+        <td>被訪頁面</td>
+        <td>來路頁面</td>
+        <td>來自</td>
     </tr>
     <?php foreach ($recentlyArray as $value) { ?>
     <tr style="background-color: #FFFBEE">

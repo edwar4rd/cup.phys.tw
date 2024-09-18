@@ -11,8 +11,8 @@
     </tr>
     <tr>
         <td align="center" style="font-size:8pt">
-            ²Î­pªA°È´£¨Ñ: <a class="c1" href="<?= $conf['service_link'] ?>" target="_blank"><?= $conf['service_offer'] ?></a>&nbsp;&nbsp;&nbsp;&nbsp;
-            §Ş³N¤ä«ù: <a class="c1" href="http://www.bbsfans.com" target="_blank">BBSFans.com</a>
+            çµ±è¨ˆæœå‹™æä¾›: <a class="c1" href="<?= $conf['service_link'] ?>" target="_blank"><?= $conf['service_offer'] ?></a>&nbsp;&nbsp;&nbsp;&nbsp;
+            æŠ€è¡“æ”¯æŒ: <a class="c1" href="http://www.bbsfans.com" target="_blank">BBSFans.com</a>
         </td>
     </tr>
 </table>

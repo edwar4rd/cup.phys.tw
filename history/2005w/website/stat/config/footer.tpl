@@ -3,14 +3,14 @@
         <td>
             <table width="100%"><tr>
                 <td align="left" width="10%">
-                    <a href="#top" title="¨ì¥»­¶³»³¡"><img src="images/arrow_up.gif" border="0"></a>
+                    <a href="#top" title="åˆ°æœ¬é é ‚éƒ¨"><img src="images/arrow_up.gif" border="0"></a>
                 </td>
                 <td align=center>
-                    <font face="{$font}" color="{$fontcolorthird}">¥»½×¾Â¨¥½×¯ÂÄİµoªíªÌ­Ó¤H·N¨£¡A»P {$forum_name} ¥ß³õµLÃö¡C</font>
+                    <font face="{$font}" color="{$fontcolorthird}">æœ¬è«–å£‡è¨€è«–ç´”å±¬ç™¼è¡¨è€…å€‹äººæ„è¦‹ï¼Œèˆ‡ {$forum_name} ç«‹å ´ç„¡é—œã€‚</font>
                 </td>
                 <td align="right" width="10%">
                     <a name="#bottom"></a>
-                    <a href="#top" title="¨ì¥»­¶³»³¡"><img src="images/arrow_up.gif" border="0"></a>
+                    <a href="#top" title="åˆ°æœ¬é é ‚éƒ¨"><img src="images/arrow_up.gif" border="0"></a>
                 </td>
             </tr></table>
         </td>
@@ -47,7 +47,7 @@
 
 
 
- {if $runtimes neq ""}­¶­±¥Í¦¨®É¶¡:{$runtimes}{/if}
+ {if $runtimes neq ""}é é¢ç”Ÿæˆæ™‚é–“:{$runtimes}{/if}
 
 </td>
 </tr>

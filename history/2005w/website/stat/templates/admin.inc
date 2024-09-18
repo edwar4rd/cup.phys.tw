@@ -4,16 +4,16 @@
 <table class="tbody" cellspacing="1" align="center" cellpadding="0">
     <tr>
         <td class="thead">
-            &nbsp; <img src="images/tb_title.gif" align="absmiddle"> &nbsp;ºŞ²z­ûµn¤J
+            &nbsp; <img src="images/tb_title.gif" align="absmiddle"> &nbsp;ç®¡ç†å“¡ç™»å…¥
         </td>
     </tr>
     <tr>
         <td class="middle">
             <table border="0" cellpadding="0" cellspacing="0" align="center">
             <tr height="30"><td>
-            ¥Î¤á¡G<input type="text" name="username" size="15"> &nbsp;&nbsp;
-            ±K½X¡G<input type="password" name="password" size="15">
-            <input type="submit" value=" µn¤J ">
+            ç”¨æˆ¶ï¼š<input type="text" name="username" size="15"> &nbsp;&nbsp;
+            å¯†ç¢¼ï¼š<input type="password" name="password" size="15">
+            <input type="submit" value=" ç™»å…¥ ">
             </td></tr>
             </table>
         </td>
@@ -26,7 +26,7 @@
 <table class="tbody" cellspacing="1" align="center" cellpadding="0">
     <tr>
         <td class="thead">
-            &nbsp; <img src="images/tb_title.gif" align="absmiddle"> &nbsp;ºŞ²z­û&#36873;&#39033;
+            &nbsp; <img src="images/tb_title.gif" align="absmiddle"> &nbsp;ç®¡ç†å“¡&#36873;&#39033;
         </td>
     </tr>
     <tr>
@@ -35,8 +35,8 @@
         <table border="0" cellpadding="0" cellspacing="0" align="center">
         <tr height="30"><td>
         <input type="hidden" name="send" value="doit">
-        <input type="button" value="²Î­p¨t²ÎÂk¹s" onclick="if (window.confirm('ª`·N ! ³o±N§R°£©Ò¦³ªº²Î­p¼Æ¾Ú !  \n\n°£«D±z½T©w·QÂk¹s, §_«h¤£­n¨Ï¥Î !')){document.forms[0].submit();}">
-        <input type="button"value="°h¥Xµn¤J" onclick="document.forms[0].action='logout.php'; document.forms[0].submit();">
+        <input type="button" value="çµ±è¨ˆç³»çµ±æ­¸é›¶" onclick="if (window.confirm('æ³¨æ„ ! é€™å°‡åˆªé™¤æ‰€æœ‰çš„çµ±è¨ˆæ•¸æ“š !  \n\né™¤éæ‚¨ç¢ºå®šæƒ³æ­¸é›¶, å¦å‰‡ä¸è¦ä½¿ç”¨ !')){document.forms[0].submit();}">
+        <input type="button"value="é€€å‡ºç™»å…¥" onclick="document.forms[0].action='logout.php'; document.forms[0].submit();">
         </td></tr>
         </table>
 

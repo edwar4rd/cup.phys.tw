@@ -1,7 +1,7 @@
 <table class="tbody" cellspacing="1" align="center" cellpadding="0">
     <tr>
         <td class="thead">
-            &nbsp; <img src="images/tb_title.gif" align="absmiddle"> &nbsp;©Ò¦³¤ë¥÷¤é³X°Ý¶q
+            &nbsp; <img src="images/tb_title.gif" align="absmiddle"> &nbsp;æ‰€æœ‰æœˆä»½æ—¥è¨ªå•é‡
         </td>
     </tr>
     <tr>
@@ -24,7 +24,7 @@
                 <?php if ($value['visittimes'] != 0) {?>
                 <img src="images/v_bar.gif"
                      height="<?= $value['height'] ?>" width="11"
-                     alt=" <?= $value['whichday'] ?> ¤é, ³X°Ý <?= $value['visittimes'] ?> ¦¸<br>
+                     alt=" <?= $value['whichday'] ?> æ—¥, è¨ªå• <?= $value['visittimes'] ?> æ¬¡<br>
 <?= $value['percent'] ?>">
                 <?php } ?>
                 </td>
@@ -41,7 +41,7 @@
                 <?php foreach ($alldaylist as $value) { ?>
                 <td width="15" valign="bottom" align="center" class="vback">
                 <span style="font-family: Arial; letter-spacing: -1; cursor: default"
-                     title=" <?= $value['whichday'] ?> ¤é, ³X°Ý <?= $value['visittimes'] ?> ¦¸<br>
+                     title=" <?= $value['whichday'] ?> æ—¥, è¨ªå• <?= $value['visittimes'] ?> æ¬¡<br>
 <?= $value['percent'] ?>">
                 <?= $value['whichday'] ?>
                 </span>

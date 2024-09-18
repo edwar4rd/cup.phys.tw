@@ -48,37 +48,37 @@ $cycleArray['cycle'] = array('#E6E6E6','#DADADA','#DADADA','#CDCDCD','#CDCDCD','
     <tr><td valign="top" align="center">
         <table width="120" cellspacing="4">
             <tr height="20" style="background-color: <?php cycle() ?>"><td align="left" style="padding-left: 10px">
-                <a href="main.php?actionID=TotalData" target="main" onclick="hideHref(this)">¡` ≈È ∏Í Æ∆</a>
+                <a href="main.php?actionID=TotalData" target="main" onclick="hideHref(this)">Á∏Ω È´î Ë≥á Êñô</a>
             </td></tr>
 
             <tr height="20" style="background-color: <?php cycle() ?>"><td align="left" style="padding-left: 10px">
-                <a href="main.php?actionID=RecentlyRecord" target="main" onclick="hideHref(this)">≥Ã ∑s ∞O ø˝</a>
+                <a href="main.php?actionID=RecentlyRecord" target="main" onclick="hideHref(this)">ÊúÄ Êñ∞ Ë®ò ÈåÑ</a>
             </td></tr>
 
             <tr height="20" style="background-color: <?php cycle() ?>"><td align="left" style="padding-left: 10px">
-                <a href="main.php?actionID=HoursStat" target="main" onclick="hideHref(this)">24 §p Æ… ≤Œ ≠p</a>
+                <a href="main.php?actionID=HoursStat" target="main" onclick="hideHref(this)">24 Â∞è ÊôÇ Áµ± Ë®à</a>
             </td></tr>
 
             <tr height="20" style="background-color: <?php cycle() ?>"><td align="left" style="padding-left: 10px">
-                <a href="main.php?actionID=DayStat" target="main" onclick="hideHref(this)">§È ≤Œ ≠p</a>
+                <a href="main.php?actionID=DayStat" target="main" onclick="hideHref(this)">Êó• Áµ± Ë®à</a>
             </td></tr>
 
             <tr height="20" style="background-color: <?php cycle() ?>"><td align="left" style="padding-left: 10px">
-                <a href="main.php?actionID=WeekStat" target="main" onclick="hideHref(this)">∂g ≤Œ ≠p</a>
+                <a href="main.php?actionID=WeekStat" target="main" onclick="hideHref(this)">ÈÄ± Áµ± Ë®à</a>
             </td></tr>
 
             <tr height="20" style="background-color: <?php cycle() ?>"><td align="left" style="padding-left: 10px">
-                <a href="main.php?actionID=MonthStat" target="main" onclick="hideHref(this)">§Î ≤Œ ≠p</a>
+                <a href="main.php?actionID=MonthStat" target="main" onclick="hideHref(this)">Êúà Áµ± Ë®à</a>
             </td></tr>
 
             <tr height="20" style="background-color: <?php cycle() ?>"><td align="left" style="padding-left: 10px">
-                <a href="main.php?actionID=ClientSoftwareStat" target="main" onclick="hideHref(this)">≥X ∞› ™Ã ≥n ≈È</a>
+                <a href="main.php?actionID=ClientSoftwareStat" target="main" onclick="hideHref(this)">Ë®™ Âïè ËÄÖ Ëªü È´î</a>
             </td></tr>
 
             <tr height="20"><td>&nbsp;</td></tr>
 
             <tr height="20" style="background-color: <?php cycle() ?>"><td align="left" style="padding-left: 10px">
-                <a href="admin.php" target="main" onclick="hideHref(this)">∫ﬁ ≤z ≠˚ µn §J</a>
+                <a href="admin.php" target="main" onclick="hideHref(this)">ÁÆ° ÁêÜ Âì° Áôª ÂÖ•</a>
             </td></tr>
         </table>
     </td></tr>

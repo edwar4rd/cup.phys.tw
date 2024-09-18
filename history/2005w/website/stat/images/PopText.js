@@ -1,6 +1,6 @@
 
-tPopWait=50;  //°±―dtWait (ms)¦ZΕγ¥ά΄£¥ά
-tPopShow=5000;//Εγ¥άtShow (ms)¦ZΓφ³¬΄£¥ά
+tPopWait=50;  //εη•™tWait (ms)ει΅―η¤Ίζη¤Ί
+tPopShow=5000;//ι΅―η¤ΊtShow (ms)ει—ι–‰ζη¤Ί
 
 showPopStep=20;
 popOpacity=99;

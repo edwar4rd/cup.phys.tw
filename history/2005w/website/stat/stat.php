@@ -59,7 +59,7 @@ function setData($dbName, $dbContent)
     fclose($oFile);
 }
 
-//¦pªG¤£¬O²Ä¤@¦¸¡A´N§ó·s©Ò¦³¼Æ¾ÚÀÉ®×********************************************
+//å¦‚æœä¸æ˜¯ç¬¬ä¸€æ¬¡ï¼Œå°±æ›´æ–°æ‰€æœ‰æ•¸æ“šæª”æ¡ˆ********************************************
 if ($notfirst) {
 
     $statdate = getData("date.db");
@@ -121,29 +121,29 @@ if ($notfirst) {
     // Update hour **********************************************************
     $stathour = $statdate['hour'];
     $stathour['all'][$today['hours']]++;
-    $stathour['recent'][$today['hours']] = $statsnap[1];//¤p®É
+    $stathour['recent'][$today['hours']] = $statsnap[1];//å°æ™‚
 
     // Update day **********************************************************
     $statday = $statdate['day'];
     $statday['all'][$today['mday']]++;
-    $statday['recent'][$today['mday']] = $statsnap[2];//¤é
+    $statday['recent'][$today['mday']] = $statsnap[2];//æ—¥
 
     // Update month **********************************************************
     $statmonth = $statdate['month'];
     $statmonth['all'][$today['mon']]++;
-    $statmonth['recent'][$today['mon']] = $statsnap[3];//¤ë
+    $statmonth['recent'][$today['mon']] = $statsnap[3];//æœˆ
 
     // Update week **********************************************************
     $statweek = $statdate['week'];
     $statweek['all'][$today['wday']]++;
-    $statweek['recent'][$today['wday']] = $statsnap[2];//©P
+    $statweek['recent'][$today['wday']] = $statsnap[2];//å‘¨
 
     // Update year **********************************************************
     $statyear = $statdate['year'];
     if (isset($lastyear)) {
         array_push($statyear,1);
     } else {
-        $statyear[count($statyear)-1] = $statsnap[4];//¦~
+        $statyear[count($statyear)-1] = $statsnap[4];//å¹´
     }
 
     // Update browser **********************************************************
@@ -151,7 +151,7 @@ if ($notfirst) {
     if (isset($statbrowser[$browser])) {
         $statbrowser[$browser]++;
     } else {
-        $statbrowser[$browser] = 1;//ÂsÄı¾¹
+        $statbrowser[$browser] = 1;//ç€è¦½å™¨
     }
 
     // Update os **********************************************************
@@ -159,10 +159,10 @@ if ($notfirst) {
     if (isset($statuseros[$useros])) {
         $statuseros[$useros]++;
     } else {
-        $statuseros[$useros] = 1;//§@·~¨t²Î
+        $statuseros[$useros] = 1;//ä½œæ¥­ç³»çµ±
     }
 
-    // §ó·sdate.db **********************************************************
+    // æ›´æ–°date.db **********************************************************
     $statdate['snap']     = $statsnap;
     $statdate['hour']     = $stathour;
     $statdate['day']      = $statday;
@@ -174,7 +174,7 @@ if ($notfirst) {
 
     setData("date.db", $statdate);
 
-    // §ó·srecent.db **********************************************************
+    // æ›´æ–°recent.db **********************************************************
     $statrecent = getData("recent.db");
     if ($statrecent === false) exit();
 
@@ -192,7 +192,7 @@ if ($notfirst) {
     setData("recent.db", $statrecent);
 
 
-//¦pªG¬O²Ä¤@¦¸¡A´Nªì©l¤Æ©Ò¦³¼Æ¾ÚÀÉ®×********************************************
+//å¦‚æœæ˜¯ç¬¬ä¸€æ¬¡ï¼Œå°±åˆå§‹åŒ–æ‰€æœ‰æ•¸æ“šæª”æ¡ˆ********************************************
 } else {
 
     $today     = getdate();
@@ -266,7 +266,7 @@ if ($notfirst) {
 
 
     $statrecent[] = array($starttime, $visitip, $visitpage, $frompage);
-    setData("recent.db", $statrecent); //³Ì·s³X°İ°O¿ı
+    setData("recent.db", $statrecent); //æœ€æ–°è¨ªå•è¨˜éŒ„
 }
 
 $now = gmdate('D, d M Y H:i:s') . ' GMT';
@@ -278,7 +278,7 @@ header('Pragma: no-cache'); // HTTP/1.0
 
 
 
-//:~ªğ¦^§@·~¨t²Î«H®§
+//:~è¿”å›ä½œæ¥­ç³»çµ±ä¿¡æ¯
 function getOsInfo()
 {
     global $HTTP_SERVER_VARS;
@@ -330,7 +330,7 @@ function getOsInfo()
     return $os;
 }
 
-//:~ªğ¦^ÂsÄı¾¹«H®§
+//:~è¿”å›ç€è¦½å™¨ä¿¡æ¯
 function getBrowserInfo()
 {
     global $HTTP_SERVER_VARS;

@@ -1,6 +1,6 @@
 <?php
 
-define('LOC_UNKNOWN', '¥¼ª¾¦a°Ï');
+define('LOC_UNKNOWN', 'æœªçŸ¥åœ°å€');
 define('OS_UNKNOWN', 'Others');
 define('BROWSER_UNKNOWN', 'Others');
 
@@ -14,7 +14,7 @@ function setData($dbName, $dbContent)
 }
 
 
-//:~ªð¦^§@·~¨t²Î«H®§
+//:~è¿”å›žä½œæ¥­ç³»çµ±ä¿¡æ¯
 function getOsInfo()
 {
     global $HTTP_SERVER_VARS;
@@ -66,7 +66,7 @@ function getOsInfo()
     return $os;
 }
 
-//:~ªð¦^ÂsÄý¾¹«H®§
+//:~è¿”å›žç€è¦½å™¨ä¿¡æ¯
 function getBrowserInfo()
 {
     global $HTTP_SERVER_VARS;
@@ -114,7 +114,7 @@ function getBrowserInfo()
     return $browseinfo;
 }
 
-//:~ªð¦^¦ì¸m«H®§
+//:~è¿”å›žä½ç½®ä¿¡æ¯
 function getLocationInfo($ip)
 {
     $ipa = split("[\.]",$ip);
